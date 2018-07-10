@@ -1,0 +1,4 @@
+project.egg-info/
+build/
+notebooks/
+log.txt
