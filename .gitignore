@@ -2,3 +2,5 @@ project.egg-info/
 build/
 notebooks/
 log.txt
+out.json
+out.csv
