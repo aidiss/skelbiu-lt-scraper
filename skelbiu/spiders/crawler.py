@@ -30,7 +30,6 @@ class CrawlerSpider(CrawlSpider):
             yield scrapy.Request(
                 url=url,
                 callback=self.parse,
-                headers={"User-Agent": "My UserAgent"},
                 meta={"proxy": "http://212.24.110.68:1338"}
             )
 
