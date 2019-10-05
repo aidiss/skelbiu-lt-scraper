@@ -11,10 +11,11 @@
 
 AUTOTHROTTLE_ENABLED = True
 BOT_NAME = "skelbiu"
-DOWNLOAD_DELAY = 1.2
+DOWNLOAD_DELAY = 5
 FEED_EXPORT_ENCODING = "utf-8"
 ITEM_PIPELINES = {"skelbiu.pipelines.SkelbiuPipeline": 300}
 NEWSPIDER_MODULE = "skelbiu.spiders"
 ROBOTSTXT_OBEY = True
 SPIDER_MODULES = ["skelbiu.spiders"]
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+LOG_LEVEL = "DEBUG"
