@@ -25,13 +25,7 @@ class CrawlerSpider(CrawlSpider):
         Rule(LinkExtractor(restrict_css="li.simpleAds"), callback="parse_item")
     )
 
-    def start_requests(self):
-        for url in self.start_urls:
-            yield scrapy.Request(
-                url=url,
-                callback=self.parse,
-                meta={"proxy": "http://212.24.110.68:1338"}
-            )
+
 
     def parse_item(self, response):
         i = {}

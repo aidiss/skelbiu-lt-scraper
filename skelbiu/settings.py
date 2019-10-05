@@ -21,3 +21,18 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 LOG_ENABLED = True
 LOG_LEVEL = "DEBUG"
 
+DOWNLOADER_MIDDLEWARES = {
+    # 'skelbiu.middlewares.CustomProxyMiddleware': 350,
+    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 400,
+    'rotating_proxies.middlewares.RotatingProxyMiddleware': 610,
+    'rotating_proxies.middlewares.BanDetectionMiddleware': 620,
+}
+ROTATING_PROXY_LIST = [
+    '95.28.155.120:8080'
+    '200.89.178.40',
+    '202.143.121.245:8080',
+    '45.234.144.106:8080',
+    '78.57.227.227:53281',
+    '185.34.52.31:80',
+    '62.33.207.202:3128',
+]
